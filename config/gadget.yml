@@ -1,0 +1,6 @@
+tepcoGadget:
+  caption:
+    ja_JP: "電力使用状況"
+  description:
+    ja_JP: "東電電力の使用状況"
+  component: [Tepco, tepcoGadget]
