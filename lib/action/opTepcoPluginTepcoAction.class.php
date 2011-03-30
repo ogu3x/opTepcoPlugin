@@ -129,7 +129,7 @@ class opTepcoPluginTepcoActions extends sfActions
   function makeCache($urlTepco, $cacheFile, $timeFile, $updateSeconds = 600)
   {
     $oldTime = 0;
-    $newTime = strtotime(date("Y/m/d g:i"));
+    $newTime = strtotime(date("Y/m/d H:i"));
     $dataTepco = '';
   
     if (file_exists($timeFile) && file_exists($cacheFile))
@@ -151,7 +151,7 @@ class opTepcoPluginTepcoActions extends sfActions
     }
   
     $h = fopen("$timeFile", "w");
-    fputs($h, date("Y/m/d g:i"));
+    fputs($h, date("Y/m/d H:i"));
     fclose($h);
   
     // Cache作成、UTF8で保存
