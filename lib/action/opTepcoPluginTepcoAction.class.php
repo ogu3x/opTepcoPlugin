@@ -116,7 +116,7 @@ class opTepcoPluginTepcoActions extends sfActions
       'year'     => $year[1],
       'month'    => sprintf("%02d", $month[1]),
       'day'      => sprintf("%02d", $day[1]),
-      'time'     => sprintf("%02d時台", $time2[1]),
+      'time'     => sprintf("%d時台", $time2[1]),
       'used'     => $curr,
       'capacity' => $capacity,
       'rate'     => $rate,
