@@ -37,6 +37,9 @@ class opTepcoPluginTepcoActions extends sfActions
     $peakinf = fgets($fp, 128);
     $dummy   = fgets($fp, 128);
     $dummy   = fgets($fp, 128);
+    $maxinf  = fgets($fp, 128);
+    $dummy   = fgets($fp, 128);
+    $dummy   = fgets($fp, 128);
 
     $a = split(',', $peakinf);
     $capacity = $a[0];
