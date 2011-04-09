@@ -21,7 +21,7 @@ new Ajax.Request (
       var img = '<?php echo public_path('/opTepcoPlugin/img/') ?>'+json.img;
       $("tepco_img").style.backgroundImage ='url('+img+')';
       $("tepco_img").style.backgroundRepeat="no-repeat";
-      $("tepco_info").innerHTML =json.time+". "+json.capacity+"万kw "+json.used+"万kw";
+      $("tepco_info").innerHTML =json.time+" "+json.capacity+"万kw "+json.used+"万kw";
       $("tepco_rate").innerHTML =json.rate+"%";
       $("tepco_rate").style.color =json.color;
     }
